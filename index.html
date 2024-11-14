@@ -12,6 +12,9 @@
     
 </head>
 <body>
+	<!-- Language Toggle Section -->
+    
+	
     <!-- Header Section -->
     <header class="bg-success text-white py-3">
         <div class="container">
@@ -22,9 +25,9 @@
 
                 <!-- Title and tagline centered -->
                 <div class="text-center flex-grow-1">
-                    <h1 class="display-5 fw-bold mb-1">Angapradesh Home Flavour Pvt. Ltd.</h1>
-                    <p class="lead mb-0">Pure Home Made Products - 100% Organic</p>
-                </div> 
+                    <h1 class="display-5 fw-bold mb-1" data-lang-en="Angapradesh Home Flavour Private Limited" data-lang-hi="अंगप्रदेश होम फ्लेवर प्राइवेट लिमिटेड">Angapradesh Home Flavour Pvt. Ltd.</h1>
+                    <p class="lead mb-0" data-lang-en="Pure Home Made Products - 100% Organic" data-lang-hi="शुद्ध घरेलू उत्पाद - 100% जैविक">Pure Home Made Products - 100% Organic</p>
+                </div>
             </div>
 
             <!-- Navigation Bar (Collapsible for mobile) -->
@@ -34,37 +37,41 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#products">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-							<li class="">
-                                <a href="#order" class="btn btn-warning btn-lg text-white fw-semibold w-100">Order Now</a>
-                            </li>
-                        </ul>
-                        
-                    </div>
+						<ul class="navbar-nav mx-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="#home" data-lang-en="Home" data-lang-hi="होम">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#products" data-lang-en="Products" data-lang-hi="उत्पाद">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about" data-lang-en="About Us" data-lang-hi="हमारे बारे में">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact" data-lang-en="Contact" data-lang-hi="संपर्क करें">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a href="#order" class="btn btn-warning text-white fw-semibold px-3" data-lang-en="Order Now" data-lang-hi="अभी ऑर्डर करें">Order Now</a>
+							</li>
+						</ul>
+					</div>
                 </div>
             </nav>
         </div>
+		<div class="text-end" >
+							<label>
+							<input type="radio" name="language" value="en" checked onclick="changeLanguage(this.value)"> English
+						</label>
+						<label>
+							<input type="radio" name="language" value="hi" onclick="changeLanguage(this.value)"> हिन्दी
+						</label>				
+					</div>
     </header>
 
 
     <!-- Main Content -->
     <main class="container my-5">
-        <!-- About Us Section -->
-        <section class="mb-5" id="about">
-    <div class="container">
-	<div class="row align-items-center mb-5">
+		<div class="row align-items-center mb-5">
 		 <div class="col-md-12">
 			<div class="accordion-body">
                     <!-- Carousel for Ad Images -->
@@ -83,7 +90,7 @@
                                 <img src="images/c7dd927b-cea1-41b1-a37f-0b87f57b9e55.jpeg" class="d-block w-100 img-fluid mx-auto" alt="Ad5" style="max-height: 500px; object-fit: cover;">
                             </div>
 							<div class="carousel-item">
-                                <img src="images/oilAd3.jpeg" class="d-block w-100 img-fluid mx-auto" alt="Ad4" style="max-height: 450px; object-fit: cover;">
+                                <img src="images/oilAd3.jpeg" class="d-block w-100 img-fluid mx-auto" alt="Ad4" style="max-height: 500px; object-fit: cover;">
                             </div>
 							<div class="carousel-item">
                                 <img src="images/cfaa08a3-87b4-49dc-b32f-d69dbae0f530.jpeg" class="d-block w-100 img-fluid mx-auto" alt="Ad4" style="max-height: 500px; object-fit: cover;">
@@ -112,27 +119,50 @@
                 </div>
 		  
 		 </div>
+	
+        <!-- About Us Section -->
+        <section class="mb-5" id="about">
         <div class="row align-items-center">
             <!-- About Us Text -->
             <div class="col-md-12 mb-3 mt-5">
-                <h2>About Us</h2>
-					<p>At <strong>Angapradesh Home Flavour Pvt. Ltd.</strong>, we are committed to delivering pure, organic, and handcrafted products that bring the authentic taste of home-cooked meals to your kitchen. Founded in April, 2021, our journey started with the vision of offering high-quality, natural products that are rooted in tradition while promoting a healthy, sustainable lifestyle.</p>
+                <h2 data-lang-en="About Us" data-lang-hi="हमारे बारे में" style="mb-3">About Us</h2>
 
-					<p>We believe that food should not only nourish the body but also celebrate the rich heritage of Indian culture. Our product range includes <strong>Shudh Kachi Ghani Mustard Oil</strong>, <strong>Desi Sattu</strong>, <strong>Katarni Chura</strong>, <strong>Katarni Rice</strong>, <strong>Besan</strong>, and more—each crafted with care, using only the finest ingredients, all sourced from trusted farms.</p>
+        <p data-lang-en="At Angapradesh Home Flavour Pvt. Ltd., we are committed to delivering pure, organic, and handcrafted products that bring the authentic taste of home-cooked meals to your kitchen. Founded in April, 2021, our journey started with the vision of offering high-quality, natural products that are rooted in tradition while promoting a healthy, sustainable lifestyle."
+           data-lang-hi="अंगप्रदेश होम फ्लेवर प्राइवेट लिमिटेड में, हम शुद्ध, जैविक और हस्तनिर्मित उत्पाद प्रदान करने के लिए प्रतिबद्ध हैं जो आपके रसोई में घर के बने भोजन का असली स्वाद लाते हैं। अप्रैल, 2021 में स्थापित, हमारी यात्रा उच्च-गुणवत्ता, प्राकृतिक उत्पादों की पेशकश के दृष्टिकोण के साथ शुरू हुई, जो परंपरा में निहित हैं और स्वस्थ, टिकाऊ जीवनशैली को बढ़ावा देते हैं।">
+            At Angapradesh Home Flavour Pvt. Ltd., we are committed to delivering pure, organic, and handcrafted products that bring the authentic taste of home-cooked meals to your kitchen.
+        </p>
 
-					<h5>Our products are:</h5>
-					<ul>
-						<li><strong>100% Organic and Pure:</strong> Free from preservatives, chemicals, and artificial additives.</li>
-						<li><strong>Nutrient-Rich:</strong> Packed with essential proteins, vitamins, and minerals, designed to support a healthy lifestyle.</li>
-						<li><strong>Traditionally Made:</strong> We use time-honored methods like cold-pressing and stone grinding to retain the natural goodness and flavor of every product.</li>
-					</ul>
+        <p data-lang-en="We believe that food should not only nourish the body but also celebrate the rich heritage of Indian culture. Our product range includes Shudh Kachi Ghani Mustard Oil, Desi Sattu, Katarni Chura, Katarni Rice, Besan, and more—each crafted with care, using only the finest ingredients, all sourced from trusted farms."
+           data-lang-hi="हम मानते हैं कि भोजन न केवल शरीर का पोषण करता है बल्कि भारतीय संस्कृति की समृद्ध विरासत का उत्सव भी मनाता है। हमारे उत्पादों में शुद्ध कच्ची घानी सरसों का तेल, देसी सत्तू, कतरनी चुरा, कतरनी चावल, बेसन और अन्य उत्पाद शामिल हैं, जो सभी विश्वसनीय स्रोतों से चुने गए उच्च गुणवत्ता वाले अवयवों से तैयार किए गए हैं।">
+            We believe that food should not only nourish the body but also celebrate the rich heritage of Indian culture.
+        </p>
 
-					<p>Since our inception, we have earned the trust of our customers and have been recognized with multiple awards for our dedication to quality and authenticity. We take pride in ensuring that each product reflects the heart and soul of traditional Indian home flavors, delivered right to your doorstep.</p>
+        <h5 data-lang-en="Our products are:" data-lang-hi="हमारे उत्पाद:">Our products are:</h5>
+        <ul>
+            <li data-lang-en="100% Organic and Pure: Free from preservatives, chemicals, and artificial additives."
+                data-lang-hi="100% जैविक और शुद्ध: प्रिजर्वेटिव्स, रसायनों और कृत्रिम योजकों से मुक्त।">
+                100% Organic and Pure: Free from preservatives, chemicals, and artificial additives.
+            </li>
+            <li data-lang-en="Nutrient-Rich: Packed with essential proteins, vitamins, and minerals, designed to support a healthy lifestyle."
+                data-lang-hi="पोषक तत्वों से भरपूर: आवश्यक प्रोटीन, विटामिन और खनिजों से युक्त, स्वस्थ जीवनशैली का समर्थन करने के लिए।">
+                Nutrient-Rich: Packed with essential proteins, vitamins, and minerals.
+            </li>
+            <li data-lang-en="Traditionally Made: We use time-honored methods like cold-pressing and stone grinding to retain the natural goodness and flavor of every product."
+                data-lang-hi="पारंपरिक रूप से बनाया गया: हम प्राकृतिक स्वाद को बरकरार रखने के लिए पारंपरिक तकनीकों का उपयोग करते हैं।">
+                Traditionally Made: We use time-honored methods like cold-pressing and stone grinding.
+            </li>
+        </ul>
 
-					<p>Whether you're looking to add a splash of authentic flavor to your cooking or simply enjoy wholesome, natural ingredients, <strong>Desi Home Flavour</strong> is your go-to choice for quality, purity, and tradition.</p>
-
-					<p>Join us on our journey to bring the best of homemade, organic goodness to your table. Because at <strong>Desi Home Flavour</strong>, it’s always about good taste, good health, and a taste of home.</p>
-            </div>
+        <p data-lang-en="Since our inception, we have earned the trust of our customers and have been recognized with multiple awards for our dedication to quality and authenticity."
+           data-lang-hi="अपने आरंभ के बाद से, हमने अपने ग्राहकों का विश्वास अर्जित किया है और गुणवत्ता और प्रामाणिकता के प्रति हमारी प्रतिबद्धता के लिए कई पुरस्कार प्राप्त किए हैं।">
+            Since our inception, we have earned the trust of our customers and have been recognized with multiple awards.
+        </p>
+        
+        <p data-lang-en="Whether you're looking to add a splash of authentic flavor to your cooking or simply enjoy wholesome, natural ingredients, Desi Home Flavour is your go-to choice for quality, purity, and tradition."
+           data-lang-hi="चाहे आप अपने खाना पकाने में प्रामाणिक स्वाद जोड़ना चाहते हों या सिर्फ स्वस्थ, प्राकृतिक सामग्री का आनंद लेना चाहते हों, देसी होम फ्लेवर गुणवत्ता, शुद्धता और परंपरा का आपका पसंदीदा विकल्प है।">
+            Desi Home Flavour is your go-to choice for quality, purity, and tradition.
+        </p>
+		</div>
             </div>
 			<div class="row align-items-center">
 			
@@ -145,37 +175,53 @@
         </div>
 		
 	 </div>
-	</div>
+
 </section>
 
         <!-- Product Accordion Section -->
         <section id="products">
-    <h2>Our Products</h2>
+    <h2 data-lang-en="Our Products"  data-lang-hi="हमारे  उत्पाद" style="mb-3">Our Products</h2>
     <div class="accordion" id="productAccordion">
         <!-- Mustard Oil Section -->
         <div class="accordion-item">
             <h3 class="accordion-header" id="mustardOilHeading">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mustardOilCollapse" aria-expanded="true" aria-controls="mustardOilCollapse">
-                    <b>Shudh Kachi Ghani Mustard Oil</b>
+                    <b data-lang-en="Shudh Kachi Ghani Mustard Oil"  data-lang-hi="शुद्ध कच्ची घानी सरसों का तेल ">Shudh Kachi Ghani Mustard Oil</b>
                 </button>
             </h3>
             <div id="mustardOilCollapse" class="accordion-collapse collapse show" aria-labelledby="mustardOilHeading" data-bs-parent="#productAccordion">
                 <div class="accordion-body">
-                    <h4>Shudh Kachi Ghani Mustard Oil - Pure & Cold-Pressed Goodness</h4>
+                    <h4 data-lang-en="Shudh Kachi Ghani Mustard Oil - Pure & Cold-Pressed Goodness" 
+        data-lang-hi="शुद्ध कच्ची घानी सरसों का तेल - शुद्ध और कोल्ड-प्रेस्ड">Shudh Kachi Ghani Mustard Oil - Pure & Cold-Pressed Goodness</h4>
 
-						<p>Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds. Using traditional cold-press techniques, this oil retains all the natural nutrients, pungency, and rich flavor that makes mustard oil a staple in Indian kitchens. Ideal for cooking, pickling, and even skincare, this mustard oil is 100% pure and unrefined, preserving its authentic taste and health benefits.</p>
+    <p data-lang-en="Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds. Using traditional cold-press techniques, this oil retains all the natural nutrients, pungency, and rich flavor that makes mustard oil a staple in Indian kitchens. Ideal for cooking, pickling, and even skincare, this mustard oil is 100% pure and unrefined, preserving its authentic taste and health benefits."
+       data-lang-hi="हमारा शुद्ध कच्ची घानी सरसों का तेल उच्च गुणवत्ता वाले सरसों के बीजों से निकाला गया एक प्रीमियम, कोल्ड-प्रेस्ड तेल है। पारंपरिक कोल्ड-प्रेस तकनीकों का उपयोग करते हुए, यह तेल सभी प्राकृतिक पोषक तत्वों, तीखेपन, और समृद्ध स्वाद को बरकरार रखता है जो भारतीय रसोई में सरसों के तेल का एक प्रधान बनाता है। यह तेल 100% शुद्ध और अनरिफाइंड है, जो अपने प्रामाणिक स्वाद और स्वास्थ्य लाभ को बनाए रखता है।">
+        Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds.
+    </p>
 
-						<h5>Key Features:</h5>
+    <h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
+    <p>
+        <strong data-lang-en="100% Pure & Cold-Pressed:" data-lang-hi="100% शुद्ध और कोल्ड-प्रेस्ड:">100% Pure & Cold-Pressed:</strong> 
+        <span data-lang-en="Extracted using traditional cold-press methods to preserve the natural nutrients, taste, and aroma." 
+              data-lang-hi="प्राकृतिक पोषक तत्वों, स्वाद, और सुगंध को बनाए रखने के लिए पारंपरिक कोल्ड-प्रेस विधियों का उपयोग करके निकाला गया।">Extracted using traditional cold-press methods to preserve natural nutrients.</span><br>
+        
+        <strong data-lang-en="Rich in Essential Fatty Acids:" data-lang-hi="आवश्यक फैटी एसिड से भरपूर:">Rich in Essential Fatty Acids:</strong> 
+        <span data-lang-en="Contains omega-3 and omega-6 fatty acids, which are beneficial for heart health and overall wellness." 
+              data-lang-hi="ओमेगा-3 और ओमेगा-6 फैटी एसिड होते हैं, जो हृदय स्वास्थ्य और संपूर्ण स्वास्थ्य के लिए लाभकारी हैं।">Contains omega-3 and omega-6 fatty acids, beneficial for heart health.</span><br>
 
-						<p>
-						<strong>100% Pure & Cold-Pressed:</strong> Extracted using traditional cold-press methods to preserve the natural nutrients, taste, and aroma.<br>
-						<strong>Rich in Essential Fatty Acids:</strong> Contains omega-3 and omega-6 fatty acids, which are beneficial for heart health and overall wellness.<br>
-						<strong>Bold Flavor and Aroma:</strong> Known for its characteristic pungency, our mustard oil adds depth and flavor to dishes, enhancing their authenticity.<br>
-						<strong>Versatile Usage:</strong> Perfect for sautéing, frying, pickling, or as a massage oil for its skin and hair benefits.<br>
-						</p>
+        <strong data-lang-en="Bold Flavor and Aroma:" data-lang-hi="साहसी स्वाद और सुगंध:">Bold Flavor and Aroma:</strong> 
+        <span data-lang-en="Known for its characteristic pungency, our mustard oil adds depth and flavor to dishes, enhancing their authenticity." 
+              data-lang-hi="अपने विशिष्ट तीखेपन के लिए जाना जाता है, हमारा सरसों का तेल व्यंजनों में गहराई और स्वाद जोड़ता है।">Known for its characteristic pungency, adds depth and flavor.</span><br>
 
-						<p>Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil. From cooking flavorful curries to preserving pickles, this oil is a staple for any kitchen that values pure, nutrient-rich ingredients.</p>
+        <strong data-lang-en="Versatile Usage:" data-lang-hi="बहुआयामी उपयोग:">Versatile Usage:</strong> 
+        <span data-lang-en="Perfect for sautéing, frying, pickling, or as a massage oil for its skin and hair benefits." 
+              data-lang-hi="सॉट करने, तलने, अचार बनाने, या त्वचा और बालों के लाभों के लिए मालिश तेल के रूप में आदर्श।">Perfect for sautéing, frying, pickling, or as a massage oil.</span>
+    </p>
 
+    <p data-lang-en="Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil. From cooking flavorful curries to preserving pickles, this oil is a staple for any kitchen that values pure, nutrient-rich ingredients."
+       data-lang-hi="हमारे शुद्ध कच्ची घानी सरसों के तेल के साथ अपने रसोई में प्रामाणिक भारतीय स्वाद का सच्चा सार लाएं। स्वादिष्ट करी पकाने से लेकर अचार को संरक्षित करने तक, यह तेल उन सभी रसोई घरों के लिए एक मुख्य आधार है जो शुद्ध, पोषक तत्वों से भरपूर अवयवों की सराहना करते हैं।">
+        Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil.
+    </p>
                     <!-- Carousel for Mustard Oil Images -->
                     <div id="mustardOilCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
 						<div class="carousel-inner">
@@ -226,26 +272,42 @@
         <div class="accordion-item">
             <h3 class="accordion-header" id="sattuHeading">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sattuCollapse" aria-expanded="false" aria-controls="sattuCollapse">
-                    <b>Desi Besan</b>
+                    <b  data-lang-en="Desi Besan" data-lang-hi="शुद्ध बेसन ">Desi Besan</b>
                 </button>
             </h3>
             <div id="sattuCollapse" class="accordion-collapse collapse" aria-labelledby="sattuHeading" data-bs-parent="#productAccordion">
                 <div class="accordion-body">
-                    <h4>Pure Besan - A Versatile Kitchen Staple</h4>
+                     <h4 data-lang-en="Pure Besan - A Versatile Kitchen Staple" 
+        data-lang-hi="शुद्ध बेसन - एक बहुमुखी रसोई सामग्री">Pure Besan - A Versatile Kitchen Staple</h4>
 
-						<p>Our Pure Besan, also known as gram flour, is made from the finest quality chana (chickpeas) ground to a smooth, fine powder. A key ingredient in Indian cooking, Besan is used in a wide range of savory and sweet dishes. Rich in protein, fiber, and essential nutrients, it serves as an excellent base for batters, snacks, curries, and desserts. Whether you're preparing crispy fritters, traditional sweets, or using it as a thickening agent for soups and gravies, our Besan adds flavor and nutrition to every meal.</p>
+    <p data-lang-en="Our Pure Besan, also known as gram flour, is made from the finest quality chana (chickpeas) ground to a smooth, fine powder. A key ingredient in Indian cooking, Besan is used in a wide range of savory and sweet dishes. Rich in protein, fiber, and essential nutrients, it serves as an excellent base for batters, snacks, curries, and desserts. Whether you're preparing crispy fritters, traditional sweets, or using it as a thickening agent for soups and gravies, our Besan adds flavor and nutrition to every meal."
+       data-lang-hi="हमारा शुद्ध बेसन, जिसे चना आटा भी कहा जाता है, उच्च गुणवत्ता वाले चने से बना होता है, जिसे एक चिकनी, बारीक पाउडर में पीसा जाता है। भारतीय खाना पकाने में एक मुख्य घटक, बेसन का उपयोग कई प्रकार के नमकीन और मीठे व्यंजनों में किया जाता है। प्रोटीन, फाइबर, और आवश्यक पोषक तत्वों से भरपूर, यह घोल, स्नैक्स, करी, और मिठाइयों के लिए एक उत्कृष्ट आधार प्रदान करता है। चाहे आप कुरकुरे पकौड़े, पारंपरिक मिठाइयाँ बना रहे हों या इसे सूप और ग्रेवी के लिए गाढ़ा करने वाले एजेंट के रूप में उपयोग कर रहे हों, हमारा बेसन हर भोजन में स्वाद और पोषण जोड़ता है।">
+        Our Pure Besan, also known as gram flour, is made from the finest quality chana.
+    </p>
 
-						<h5>Key Features:</h5>
+    <h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
+    <p>
+        <strong data-lang-en="100% Pure and Natural:" data-lang-hi="100% शुद्ध और प्राकृतिक:">100% Pure and Natural:</strong> 
+        <span data-lang-en="Made from high-quality, organically grown chickpeas, with no additives or preservatives." 
+              data-lang-hi="उच्च गुणवत्ता वाले, जैविक रूप से उगाए गए चने से बना है, जिसमें कोई एडिटिव्स या प्रिजर्वेटिव्स नहीं हैं।">Made from high-quality, organically grown chickpeas.</span><br>
+        
+        <strong data-lang-en="Protein-Rich:" data-lang-hi="प्रोटीन से भरपूर:">Protein-Rich:</strong> 
+        <span data-lang-en="A great source of plant-based protein, making it an excellent choice for vegetarians and vegans." 
+              data-lang-hi="पौधे-आधारित प्रोटीन का एक बेहतरीन स्रोत, जो इसे शाकाहारियों और वेगन्स के लिए एक उत्कृष्ट विकल्प बनाता है।">Great source of plant-based protein.</span><br>
 
-						<p>
-						<strong>100% Pure and Natural:</strong> Made from high-quality, organically grown chickpeas, with no additives or preservatives.<br>
-						<strong>Protein-Rich:</strong> A great source of plant-based protein, making it an excellent choice for vegetarians and vegans.<br>
-						<strong>Versatile Ingredient:</strong> Perfect for a wide variety of dishes, from pakoras, dhokla, and chillas to halwa and ladoos.<br>
-						<strong>High in Fiber:</strong> Helps with digestion and provides a good amount of dietary fiber, promoting overall gut health.<br>
-						</p>
+        <strong data-lang-en="Versatile Ingredient:" data-lang-hi="बहुमुखी सामग्री:">Versatile Ingredient:</strong> 
+        <span data-lang-en="Perfect for a wide variety of dishes, from pakoras, dhokla, and chillas to halwa and ladoos." 
+              data-lang-hi="पकौड़े, ढोकला, चिल्ला से लेकर हलवा और लड्डू तक के व्यंजनों के लिए आदर्श।">Perfect for pakoras, dhokla, chillas, and desserts.</span><br>
 
-						<p>Our Pure Besan is an essential pantry item for every home, offering countless cooking possibilities while ensuring the health benefits of a natural, wholesome flour. Use it in your everyday meals, or get creative with traditional Indian snacks and desserts for a delightful, protein-packed treat!</p>
+        <strong data-lang-en="High in Fiber:" data-lang-hi="फाइबर में उच्च:">High in Fiber:</strong> 
+        <span data-lang-en="Helps with digestion and provides a good amount of dietary fiber, promoting overall gut health." 
+              data-lang-hi="पाचन में मदद करता है और आहार फाइबर की एक अच्छी मात्रा प्रदान करता है, जो समग्र आंत स्वास्थ्य को बढ़ावा देता है।">Helps with digestion and gut health.</span>
+    </p>
 
+    <p data-lang-en="Our Pure Besan is an essential pantry item for every home, offering countless cooking possibilities while ensuring the health benefits of a natural, wholesome flour. Use it in your everyday meals, or get creative with traditional Indian snacks and desserts for a delightful, protein-packed treat!"
+       data-lang-hi="हमारा शुद्ध बेसन हर घर के लिए एक आवश्यक पेंट्री आइटम है, जो प्राकृतिक, पौष्टिक आटे के स्वास्थ्य लाभ सुनिश्चित करते हुए अनगिनत खाना पकाने की संभावनाएं प्रदान करता है। इसे अपने रोज़मर्रा के भोजन में उपयोग करें, या पारंपरिक भारतीय स्नैक्स और मिठाइयों के साथ रचनात्मक बनें एक स्वादिष्ट, प्रोटीन से भरपूर ट्रीट के लिए!">
+        Our Pure Besan is an essential pantry item for every home.
+    </p>
                     <!-- Carousel for Sattu Images -->
                     <div id="besanCarousel" class="carousel slide" data-bs-ride="carousel" style="">
                         <div class="carousel-inner mb-3">
@@ -279,26 +341,42 @@
         <div class="accordion-item">
             <h3 class="accordion-header" id="riceHeading">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#riceCollapse" aria-expanded="false" aria-controls="riceCollapse">
-                    <b>Katarni Rice</b>
+                    <b data-lang-en="Katarni Rice"  data-lang-hi="कटरनी चावल">Katarni Rice</b>
                 </button>
             </h3>
             <div id="riceCollapse" class="accordion-collapse collapse" aria-labelledby="riceHeading" data-bs-parent="#productAccordion">
                 <div class="accordion-body">
-                    <h4>Katarni Rice - The Aromatic Jewel of Bihar</h4>
+                    <h4 data-lang-en="Katarni Rice - The Aromatic Jewel of Bihar" 
+        data-lang-hi="कटरनी चावल - बिहार का सुगंधित रत्न">Katarni Rice - The Aromatic Jewel of Bihar</h4>
 
-						<p>Our Katarni Rice is a rare and fragrant variety of rice sourced from the fertile lands of Bihar, known for its distinct aroma, fine texture, and natural taste. This rice is cherished for its delicate fragrance, which makes it a perfect choice for special dishes, festive occasions, or daily meals that require a touch of elegance and authenticity.</p>
+    <p data-lang-en="Our Katarni Rice is a rare and fragrant variety of rice sourced from the fertile lands of Bihar, known for its distinct aroma, fine texture, and natural taste. This rice is cherished for its delicate fragrance, which makes it a perfect choice for special dishes, festive occasions, or daily meals that require a touch of elegance and authenticity."
+       data-lang-hi="हमारा कटरनी चावल बिहार की उपजाऊ भूमि से प्राप्त एक दुर्लभ और सुगंधित प्रकार का चावल है, जो अपनी विशिष्ट सुगंध, बारीक बनावट और प्राकृतिक स्वाद के लिए जाना जाता है। यह चावल अपनी नाज़ुक सुगंध के लिए पसंद किया जाता है, जो इसे विशेष व्यंजनों, त्योहारों और ऐसे दैनिक भोजन के लिए एक आदर्श विकल्प बनाता है जिसमें परंपरागत स्वाद और शुद्धता हो।">
+       Our Katarni Rice is a rare and fragrant variety of rice sourced from Bihar.
+    </p>
 
-						<h5>Key Features:</h5>
+    <h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
+    <p>
+        <strong data-lang-en="Exclusive Aroma and Flavor:" data-lang-hi="विशिष्ट सुगंध और स्वाद:">Exclusive Aroma and Flavor:</strong> 
+        <span data-lang-en="Known for its unique, sweet fragrance and delicate taste, Katarni rice enhances the dining experience with every meal." 
+              data-lang-hi="अपने अनोखे, मीठे खुशबू और नाजुक स्वाद के लिए जाना जाता है, कटरनी चावल हर भोजन के साथ खाने का अनुभव बढ़ाता है।">Known for its unique, sweet fragrance and delicate taste.</span><br>
+        
+        <strong data-lang-en="100% Natural and Chemical-Free:" data-lang-hi="100% प्राकृतिक और रासायनिक मुक्त:">100% Natural and Chemical-Free:</strong> 
+        <span data-lang-en="Grown and processed without the use of harmful chemicals, ensuring pure, natural quality." 
+              data-lang-hi="हानिकारक रसायनों के बिना उगाया और संसाधित किया गया, जो शुद्ध, प्राकृतिक गुणवत्ता सुनिश्चित करता है।">Grown and processed without harmful chemicals.</span><br>
 
-						<p>
-						<strong>Exclusive Aroma and Flavor:</strong> Known for its unique, sweet fragrance and delicate taste, Katarni rice enhances the dining experience with every meal.<br>
-						<strong>100% Natural and Chemical-Free:</strong> Grown and processed without the use of harmful chemicals, ensuring pure, natural quality.<br>
-						<strong>Light and Easy to Digest:</strong> Its fine grains are light, making it ideal for a range of dishes, from simple rice bowls to elaborate biryanis.<br>
-						<strong>Perfect for Special Occasions:</strong> Suitable for pulaos, kheer, and other festive dishes that demand a premium, aromatic rice.<br>
-						</p>
+        <strong data-lang-en="Light and Easy to Digest:" data-lang-hi="हल्का और पचने में आसान:">Light and Easy to Digest:</strong> 
+        <span data-lang-en="Its fine grains are light, making it ideal for a range of dishes, from simple rice bowls to elaborate biryanis." 
+              data-lang-hi="इसके बारीक दाने हल्के होते हैं, जो इसे साधारण राइस बाउल्स से लेकर विस्तृत बिरयानी तक की एक श्रेणी के व्यंजनों के लिए आदर्श बनाते हैं।">Ideal for a range of dishes, from rice bowls to biryanis.</span><br>
 
-						<p>Bring home the traditional essence of Bihar with our Katarni Rice, perfect for those who appreciate authentic flavors and premium-quality grains. Ideal for creating meals that are both nutritious and full of exquisite taste, our Katarni Rice is a celebration of India’s rich culinary heritage.</p>
+        <strong data-lang-en="Perfect for Special Occasions:" data-lang-hi="विशेष अवसरों के लिए आदर्श:">Perfect for Special Occasions:</strong> 
+        <span data-lang-en="Suitable for pulaos, kheer, and other festive dishes that demand a premium, aromatic rice." 
+              data-lang-hi="पुलाव, खीर और अन्य त्योहारों के व्यंजनों के लिए उपयुक्त है, जिसमें एक प्रीमियम, सुगंधित चावल की आवश्यकता होती है।">Suitable for pulaos, kheer, and festive dishes.</span>
+    </p>
 
+    <p data-lang-en="Bring home the traditional essence of Bihar with our Katarni Rice, perfect for those who appreciate authentic flavors and premium-quality grains. Ideal for creating meals that are both nutritious and full of exquisite taste, our Katarni Rice is a celebration of India’s rich culinary heritage."
+       data-lang-hi="हमारे कटरनी चावल के साथ बिहार का पारंपरिक सार अपने घर लाएं, जो उन लोगों के लिए एकदम सही है जो प्रामाणिक स्वाद और उच्च गुणवत्ता वाले दानों की सराहना करते हैं। पोषण और उत्तम स्वाद से भरपूर भोजन तैयार करने के लिए आदर्श, हमारा कटरनी चावल भारत की समृद्ध पाक विरासत का उत्सव है।">
+       Bring home the traditional essence of Bihar with our Katarni Rice.
+    </p>
                     <!-- Carousel for Katarni Rice Images -->
                     <div id="riceCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner mb-3">
@@ -334,26 +412,43 @@
         <div class="accordion-item">
             <h3 class="accordion-header" id="churaHeading">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#churaCollapse" aria-expanded="false" aria-controls="churaCollapse">
-                    <b>Poha (Chura)</b>
+                    <b data-lang-en="Katarni Poha Chura " 
+        data-lang-hi="कटरनी चूड़ा">Katarni Poha (Chura)</b>
                 </button>
             </h3>
             <div id="churaCollapse" class="accordion-collapse collapse" aria-labelledby="churaHeading" data-bs-parent="#productAccordion">
                 <div class="accordion-body">
-                    <h4>Katarni Chura - A Fragrant, Wholesome Delight</h4>
+                    <h4 data-lang-en="Katarni Chura - A Fragrant, Wholesome Delight" 
+        data-lang-hi="कटरनी चूड़ा - एक सुगंधित, पौष्टिक आनंद">Katarni Chura - A Fragrant, Wholesome Delight</h4>
 
-						<p>Our Katarni Chura, also known as poha or flattened rice, is a unique, aromatic variety sourced directly from the finest Katarni paddy fields. Renowned for its delicate texture and distinct fragrance, this chura is carefully processed to preserve its natural flavor and nutritional value. Known as a versatile staple in Indian households, Katarni Chura is a light, healthy ingredient that can be prepared in various delicious ways, from savory breakfasts to sweet treats.</p>
+    <p data-lang-en="Our Katarni Chura, also known as poha or flattened rice, is a unique, aromatic variety sourced directly from the finest Katarni paddy fields. Renowned for its delicate texture and distinct fragrance, this chura is carefully processed to preserve its natural flavor and nutritional value. Known as a versatile staple in Indian households, Katarni Chura is a light, healthy ingredient that can be prepared in various delicious ways, from savory breakfasts to sweet treats."
+       data-lang-hi="हमारा कटरनी चूड़ा, जिसे पोहा या चपटा चावल भी कहा जाता है, सबसे उत्तम कटरनी धान के खेतों से प्राप्त एक अनोखी, सुगंधित किस्म है। अपनी नाजुक बनावट और विशिष्ट सुगंध के लिए प्रसिद्ध, इस चूड़े को इसके प्राकृतिक स्वाद और पौष्टिक मूल्य को बनाए रखने के लिए सावधानीपूर्वक प्रसंस्करित किया गया है। भारतीय घरों में एक बहुउपयोगी मुख्य भोजन के रूप में जाना जाने वाला, कटरनी चूड़ा एक हल्का, स्वस्थ अवयव है जिसे विभिन्न स्वादिष्ट तरीकों से तैयार किया जा सकता है, जैसे मसालेदार नाश्ते से लेकर मीठे व्यंजन तक।">
+       Our Katarni Chura is a unique, aromatic variety sourced from Katarni paddy fields.
+    </p>
 
-						<h5>Key Features:</h5>
+    <h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
+    <p>
+        <strong data-lang-en="Authentic Aroma and Flavor:" data-lang-hi="प्रामाणिक सुगंध और स्वाद:">Authentic Aroma and Flavor:</strong> 
+        <span data-lang-en="Made from the rare Katarni rice variety, known for its rich, unique fragrance and taste." 
+              data-lang-hi="दुर्लभ कटरनी चावल की किस्म से बना, जो अपनी समृद्ध, अनोखी सुगंध और स्वाद के लिए जाना जाता है।">Known for its unique fragrance and taste.</span><br>
+        
+        <strong data-lang-en="100% Natural and Preservative-Free:" data-lang-hi="100% प्राकृतिक और संरक्षक मुक्त:">100% Natural and Preservative-Free:</strong> 
+        <span data-lang-en="Our chura is prepared without additives, retaining the pure, natural goodness of premium-quality Katarni rice." 
+              data-lang-hi="हमारा चूड़ा बिना किसी संरक्षक के तैयार किया गया है, जिसमें उच्च गुणवत्ता वाले कटरनी चावल की शुद्ध, प्राकृतिक अच्छाई बरकरार रहती है।">Prepared without additives, retaining pure natural goodness.</span><br>
 
-						<p>
-						<strong>Authentic Aroma and Flavor:</strong> Made from the rare Katarni rice variety, known for its rich, unique fragrance and taste.<br>
-						<strong>100% Natural and Preservative-Free:</strong> Our chura is prepared without additives, retaining the pure, natural goodness of premium-quality Katarni rice.<br>
-						<strong>Light and Nutritious:</strong> A wholesome, easily digestible source of essential carbohydrates and energy, ideal for a light and satisfying meal.<br>
-						<strong>Versatile and Easy to Prepare:</strong> Soak, season, or fry with your choice of spices, nuts, and vegetables to create a range of traditional dishes or innovative recipes.<br>
-						</p>
+        <strong data-lang-en="Light and Nutritious:" data-lang-hi="हल्का और पौष्टिक:">Light and Nutritious:</strong> 
+        <span data-lang-en="A wholesome, easily digestible source of essential carbohydrates and energy, ideal for a light and satisfying meal." 
+              data-lang-hi="आवश्यक कार्बोहाइड्रेट और ऊर्जा का एक स्वस्थ, आसानी से पचने वाला स्रोत, जो हल्के और संतोषजनक भोजन के लिए आदर्श है।">A nutritious, easily digestible source of energy.</span><br>
 
-						<p>Enjoy our Katarni Chura in traditional preparations like spiced poha, sweetened dahi chura, or as a base for snacks and fillings. It’s a fragrant, nutritious staple that brings a taste of authentic Indian tradition to every meal, making it perfect for those who seek both flavor and wholesome, natural nutrition.</p>
-											
+        <strong data-lang-en="Versatile and Easy to Prepare:" data-lang-hi="बहुउपयोगी और तैयार करने में आसान:">Versatile and Easy to Prepare:</strong> 
+        <span data-lang-en="Soak, season, or fry with your choice of spices, nuts, and vegetables to create a range of traditional dishes or innovative recipes." 
+              data-lang-hi="भिगोएं, मसाला डालें, या अपने पसंद के मसालों, नट्स और सब्जियों के साथ तला हुआ बनाएं और पारंपरिक व्यंजन या नवीन व्यंजनों की एक श्रृंखला बनाएं।">Prepare with spices, nuts, and vegetables for varied dishes.</span>
+    </p>
+
+    <p data-lang-en="Enjoy our Katarni Chura in traditional preparations like spiced poha, sweetened dahi chura, or as a base for snacks and fillings. It’s a fragrant, nutritious staple that brings a taste of authentic Indian tradition to every meal, making it perfect for those who seek both flavor and wholesome, natural nutrition."
+       data-lang-hi="हमारे कटरनी चूड़ा का आनंद पारंपरिक तैयारियों जैसे मसालेदार पोहा, मीठे दही चूड़ा, या नाश्ते और भराई के लिए आधार के रूप में लें। यह एक सुगंधित, पौष्टिक मुख्य भोजन है जो हर भोजन में प्रामाणिक भारतीय परंपरा का स्वाद लाता है, जो उन लोगों के लिए एकदम सही है जो स्वाद और पौष्टिकता दोनों की तलाश करते हैं।">
+       Enjoy our Katarni Chura in traditional dishes like spiced poha.
+    </p>				
                     <!-- Carousel for Katarni Chura Images -->
                     <div id="churaCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner mb-3">
@@ -393,24 +488,39 @@
         <div class="accordion-item">
             <h3 class="accordion-header" id="SattuHeading">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SattuCollapse" aria-expanded="false" aria-controls="SattuCollapse">
-                    <b>Sattu</b>
+                    <b data-lang-hi="देसी सत्तू " data-lang-en="Desi Sattu" >Sattu</b>
                 </button>
             </h3>
             <div id="SattuCollapse" class="accordion-collapse collapse" aria-labelledby="SattuHeading" data-bs-parent="#productAccordion">
                 <div class="accordion-body">
-                    <h4>Desi Sattu - A Nutrient-Packed Powerhouse</h4>
+                    <h4 data-lang-en="Desi Sattu - A Nutrient-Packed Powerhouse" 
+        data-lang-hi="देसी सत्तू - एक पौष्टिक ऊर्जा से भरपूर आहार">Desi Sattu - A Nutrient-Packed Powerhouse</h4>
 
-						<p>Our Desi Sattu is a wholesome, high-energy flour made from premium roasted chana (gram), ground to perfection to retain its rich nutritional profile. Known as a traditional superfood, Sattu is packed with essential proteins, fiber, and minerals, making it a favorite in Indian kitchens for centuries. This finely milled flour offers a subtle, earthy flavor that complements a variety of dishes, from refreshing drinks to hearty breakfasts.</p>
+    <p data-lang-en="Our Desi Sattu is a wholesome, high-energy flour made from premium roasted chana (gram), ground to perfection to retain its rich nutritional profile. Known as a traditional superfood, Sattu is packed with essential proteins, fiber, and minerals, making it a favorite in Indian kitchens for centuries. This finely milled flour offers a subtle, earthy flavor that complements a variety of dishes, from refreshing drinks to hearty breakfasts."
+       data-lang-hi="हमारा देसी सत्तू एक पौष्टिक, ऊर्जा से भरपूर आटा है जो प्रीमियम भुने हुए चने से बनाया गया है और इसके समृद्ध पोषण को बनाए रखने के लिए सावधानीपूर्वक पीसा गया है। एक पारंपरिक सुपरफूड के रूप में जाना जाने वाला सत्तू, आवश्यक प्रोटीन, फाइबर, और खनिजों से भरपूर है, जो सदियों से भारतीय रसोई में पसंदीदा रहा है। यह बारीक पिसा आटा एक सूक्ष्म, मिट्टी जैसा स्वाद प्रदान करता है जो विभिन्न व्यंजनों के साथ मेल खाता है, जैसे कि ताजगी देने वाले पेय से लेकर भरपूर नाश्ते तक।">Our Desi Sattu is a high-energy, nutrient-rich flour from roasted chana.</p>
 
-						<h5>Key Features:</h3>
-						<p>
-						100% Organic and Pure: Crafted from carefully selected, high-quality roasted grams without any additives or preservatives.
-						Nutrient-Rich: A fantastic source of plant-based protein, fiber, iron, magnesium, and other essential nutrients.
-						Energy Boosting: Known for its high satiety, Sattu is perfect for fueling your day and keeping you feeling full longer.
-						Versatile and Easy to Use: Mix into water or milk with spices for a refreshing drink, add to smoothies, or use in savory or sweet dishes for a quick nutritional boost.
-						Enjoy our Desi Sattu as a refreshing summer drink, a delicious porridge, or an energizing ingredient in your favorite recipes. Sattu is more than just a flour—it's a time-honored source of natural, balanced nutrition for a healthy lifestyle.
-						</p>
-                    
+    <h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
+    <p>
+        <strong data-lang-en="100% Organic and Pure:" data-lang-hi="100% जैविक और शुद्ध:">100% Organic and Pure:</strong> 
+        <span data-lang-en="Crafted from carefully selected, high-quality roasted grams without any additives or preservatives." 
+              data-lang-hi="सावधानीपूर्वक चयनित, उच्च गुणवत्ता वाले भुने हुए चनों से निर्मित, बिना किसी मिलावट या संरक्षक के।">Pure, made from roasted grams with no additives.</span><br>
+
+        <strong data-lang-en="Nutrient-Rich:" data-lang-hi="पौष्टिक तत्वों से भरपूर:">Nutrient-Rich:</strong> 
+        <span data-lang-en="A fantastic source of plant-based protein, fiber, iron, magnesium, and other essential nutrients." 
+              data-lang-hi="पौधे-आधारित प्रोटीन, फाइबर, आयरन, मैग्नीशियम और अन्य आवश्यक पोषक तत्वों का उत्कृष्ट स्रोत।">Rich in protein, fiber, iron, and magnesium.</span><br>
+
+        <strong data-lang-en="Energy Boosting:" data-lang-hi="ऊर्जा वर्धक:">Energy Boosting:</strong> 
+        <span data-lang-en="Known for its high satiety, Sattu is perfect for fueling your day and keeping you feeling full longer." 
+              data-lang-hi="अपने उच्च संतोष कारक के लिए जाना जाता है, सत्तू आपके दिन को ऊर्जा देने और लंबे समय तक भरा हुआ महसूस करने के लिए आदर्श है।">Keeps you full longer, providing lasting energy.</span><br>
+
+        <strong data-lang-en="Versatile and Easy to Use:" data-lang-hi="बहुउपयोगी और उपयोग में आसान:">Versatile and Easy to Use:</strong> 
+        <span data-lang-en="Mix into water or milk with spices for a refreshing drink, add to smoothies, or use in savory or sweet dishes for a quick nutritional boost." 
+              data-lang-hi="ताजगी भरे पेय के लिए मसालों के साथ पानी या दूध में मिलाएं, स्मूदी में डालें, या जल्दी पोषण के लिए नमकीन या मीठे व्यंजनों में उपयोग करें।">Use in drinks, smoothies, or savory dishes for nutrition.</span>
+    </p>
+
+    <p data-lang-en="Enjoy our Desi Sattu as a refreshing summer drink, a delicious porridge, or an energizing ingredient in your favorite recipes. Sattu is more than just a flour—it's a time-honored source of natural, balanced nutrition for a healthy lifestyle."
+       data-lang-hi="हमारे देसी सत्तू का आनंद एक ताज़गी भरे गर्मी के पेय, स्वादिष्ट दलिया, या आपकी पसंदीदा रेसिपीज़ में एक ऊर्जा देने वाले घटक के रूप में लें। सत्तू सिर्फ एक आटा नहीं है - यह स्वस्थ जीवनशैली के लिए प्राकृतिक, संतुलित पोषण का एक प्राचीन स्रोत है।">Enjoy Desi Sattu as a refreshing drink, porridge, or nutritious ingredient.</p>
+
                     <!-- Carousel for Katarni Chura Images -->
                     <div id="SattuCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -444,23 +554,25 @@
 
         <!-- Order Section -->
         <section class="mt-5 mb-5 text-center" id="order" >
-            <h5>Order Now !</h5>
-            <p>To place an order, contact us via:</p>
-			<button class="btn btn-primary" onclick="orderMyStore()">Order on MyStore ONDC</button>
-            <button class="btn btn-success" onclick="orderWhatsApp()">Order on WhatsApp</button>
-			<button class="btn btn-secondary" onclick="orderPhone()">Call Us</button>
+           <h2 data-lang-en="Order Now!" data-lang-hi="अभी ऑर्डर करें!">Order Now!</h2>
+    <p data-lang-en="To place an order, contact us via:" data-lang-hi="ऑर्डर करने के लिए, हमसे संपर्क करें:">To place an order, contact us via:</p>
+    
+    <button class="btn btn-primary m-2" onclick="orderMyStore()" data-lang-en="Order on MyStore ONDC" data-lang-hi="मायस्टोर ONDC पर ऑर्डर करें">Order on MyStore ONDC</button>
+    <button class="btn btn-success m-2" onclick="orderWhatsApp()" data-lang-en="Order on WhatsApp" data-lang-hi="व्हाट्सएप पर ऑर्डर करें">Order on WhatsApp</button>
+    <button class="btn btn-secondary m-2" onclick="orderPhone()" data-lang-en="Call Us" data-lang-hi="हमें कॉल करें">Call Us</button>
+
         </section>
 		
 		<!-- Order Section -->
         <section class="mt-5 text-center" id="contact" >
 		<div class="row mt-5">
 		<div class="col-md-4 mb-5">
-					<h5>Our Location</h5>
-					<p>We are located at:</p>
-					<address>
-						Mansar Goswami Tola, Nathnagar,<br>
-						Bhagalpur, 812005, Bihar, India
-					</address>
+					<h3 data-lang-en="Our Location" data-lang-hi="हमारा स्थान">Our Location</h3>
+						<p data-lang-en="We are located at:" data-lang-hi="हम यहां स्थित हैं:">We are located at:</p>
+						<address>
+							<span data-lang-en="Mansar Goswami Tola, Nathnagar," data-lang-hi="मंसर गोस्वामी टोला, नाथनगर,">Mansar Goswami Tola, Nathnagar,</span><br>
+							<span data-lang-en="Bhagalpur, 812005, Bihar, India" data-lang-hi="भागलपुर, 812005, बिहार, भारत">Bhagalpur, 812005, Bihar, India</span>
+						</address>
 		
 						<!-- Google Maps Embed -->
 						<div class="embed-responsive embed-responsive-16by9">
@@ -470,13 +582,15 @@
 						</div>
 				</div>
 				<div class="col-md-4 mb-5">
-					<h2>Contact Details</h2>
-					<p>Email: angpradeshbgp31@gmail.com</br>
-					<p><b>Phone# : +91 9508706378</b></p>
+					<h3 data-lang-en="Contact Details" data-lang-hi="संपर्क विवरण">Contact Details</h3>
+						<p>
+							<span data-lang-en="Email: angpradeshbgp31@gmail.com" data-lang-hi="ईमेल: angpradeshbgp31@gmail.com">Email: angpradeshbgp31@gmail.com</span><br>
+							<span data-lang-en="Phone# : +91 9508706378" data-lang-hi="फोन#: +91 9508706378"><b>Phone# : +91 9508706378</b></span>
+						</p>
 				</div>
             <div class="col-md-4 mb-5">
-				<h5>Social Media Details</h5>
-				<p>Follow us on</p>
+				<h3 data-lang-en="Social Media Details" data-lang-hi="सोशल मीडिया विवरण">Social Media Details</h3>
+				<p data-lang-en="Follow us on :" data-lang-hi="हमें यहाँ फॉलो करें:">Follow us on :</p>
 				<div class="social-icons mt-3">
 					<a href="https://www.facebook.com/profile.php?id=100088383180143&mibextid=ZbWKwL" target="_blank" class="me-3">
 						<i class="fab fa-facebook fa-2x" style="color:blue" ></i>
@@ -519,6 +633,20 @@
 		function orderMyStore() {
 	 window.open(`https://www.mystore.in/en/product/desi-home-flavour-shhudh-mustard-oil`,'_blank');
 }
+
+function changeLanguage(language) {
+            // Get all elements with data-lang-en and data-lang-hi attributes
+            const translatableElements = document.querySelectorAll('[data-lang-en]');
+
+            // Loop through each element and set the text content based on selected language
+            translatableElements.forEach(element => {
+                if (language === 'hi') {
+                    element.textContent = element.getAttribute('data-lang-hi');
+                } else {
+                    element.textContent = element.getAttribute('data-lang-en');
+                }
+            });
+        }
     </script>
 </body>
 </html>
