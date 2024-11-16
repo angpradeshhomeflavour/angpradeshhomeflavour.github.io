@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desi Home Flavour</title>
+    <title>Angapradesh Home Flavour Pvt. Ltd.</title>
     <link rel="stylesheet" href="styles.css">
 	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -12,33 +12,16 @@
     
 </head>
 <body>
-	<!-- Language Toggle Section -->
-    
-	
-    <!-- Header Section -->
-    <header class="bg-success text-white py-3">
-        <div class="container">
-		
-            <!-- Top Row with Logo and Brand Title/Tagline -->
-            <div class="d-flex align-items-center justify-content-between">
-                <!-- Logo on the left -->
-                <img src="images/Logo.jpeg" alt="Desi Home Flavour Logo" class="img-fluid" style="max-width: 150px; border-radius: 50%;">
-
-                <!-- Title and tagline centered -->
-                <div class="text-center flex-grow-1">
-                    <h1 class="display-5 fw-bold mb-1" data-lang-en="Angapradesh Home Flavour Private Limited" data-lang-hi="अंगप्रदेश होम फ्लेवर प्राइवेट लिमिटेड">Angapradesh Home Flavour Pvt. Ltd.</h1>
-                    <p class="lead mb-0" data-lang-en="Pure Home Made Products - 100% Organic" data-lang-hi="शुद्ध घरेलू उत्पाद - 100% जैविक">Pure Home Made Products - 100% Organic</p>
-                </div>
-            </div>
-
-            <!-- Navigation Bar (Collapsible for mobile) -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav mx-auto">
+    <!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container">
+			<img src="images/Logo.jpeg" alt="Logo" style="width: 50px; height: 50px; border-radius: 50%;"/>
+				<a class="navbar-brand mx-3" href="#home" data-lang-en=" Angapradesh Home Flavour Private Limited" data-lang-hi="  अंगप्रदेश होम फ्लेवर प्राइवेट लिमिटेड"> Angapradesh Home Flavour Pvt. Ltd.</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
 							<li class="nav-item">
 								<a class="nav-link active" href="#home" data-lang-en="Home" data-lang-hi="होम">Home</a>
 							</li>
@@ -54,27 +37,28 @@
 							<li class="nav-item">
 								<a href="#order" class="btn btn-warning text-white fw-semibold px-3" data-lang-en="Order Now" data-lang-hi="अभी ऑर्डर करें">Order Now</a>
 							</li>
-						</ul>
-					</div>
-                </div>
-            </nav>
-					
-			
-        </div>
-		<div class="text-end" >
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Hero Section -->
+		<section class="hero" id="home">
+			<div class="container">
+				<h1 data-lang-en="Angapradesh Home Flavour Private Limited" data-lang-hi="अंगप्रदेश होम फ्लेवर प्राइवेट लिमिटेड">Welcome to Angapradesh Home Flavour Pvt. Ltd.</h1>
+				<p data-lang-en="Pure Home Made Products - 100% Organic" data-lang-hi="शुद्ध घरेलू उत्पाद - 100% जैविक">Pure Home Made Products - 100% Organic</p>
+				<a href="#order" class="btn btn-warning btn-lg text-dark fw-bold">Order Now</a>
+				<div class="text-end" >
 							<label>
-							<input type="radio" name="language" value="en" checked onclick="changeLanguage(this.value)"> English
-						</label>
-						<label>
-							<input type="radio" name="language" value="hi" onclick="changeLanguage(this.value)"> हिन्दी
-						</label>				
-					</div>
-    </header>
-
-
+								<input type="radio" name="language" value="en" checked onclick="changeLanguage(this.value)"> English
+							</label>
+							<label>
+								<input type="radio" name="language" value="hi" onclick="changeLanguage(this.value)"> हिन्दी
+							</label>				
+				</div>
+			</div>
+		</section>
     <!-- Main Content -->
-	
-    <main class="container my-5">
+    <main class="container my-3">
 				
 		<div class="row align-items-center mb-5">
 		 <div class="col-md-12">
@@ -109,13 +93,7 @@
 								<div class="carousel-item">
                                 <img src="images/f2c06657-fb12-49ba-b20e-d8591032a8c5.jpeg" class="rounded d-block w-100 img-fluid mx-auto" alt="Ad4" style="max-height: 500px; object-fit: cover;">
                             </div>
-				<div class="carousel-item">
-                                <img src="images/5d593fad-20db-46f1-bf38-b14aed43ff7b.jpeg" class="rounded d-block w-100 img-fluid mx-auto" alt="Ad4" style="max-height: 500px; object-fit: cover;">
-                            </div>
-				<div class="carousel-item">
-                                <img src="images/4b95e9b0-2086-430f-bb78-5360436a68a1.jpeg" class="rounded d-block w-100 img-fluid mx-auto" alt="Ad4" style="max-height: 500px; object-fit: cover;">
-                            </div>
-	<!-- Add more images as needed -->
+                            <!-- Add more images as needed -->
                         </div>
                         <!-- Carousel controls -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#adCarousel" data-bs-slide="prev">
@@ -135,7 +113,7 @@
         <section class="mb-5" id="about">
         <div class="row align-items-center">
             <!-- About Us Text -->
-            <div class="col-md-12 mb-3 mt-5">
+            <div class="col-md-12 mb-3 mt-5 bg-body-secondary border">
                 <h2 data-lang-en="About Us" data-lang-hi="हमारे बारे में" style="mb-3">About Us</h2>
 
         <p data-lang-en="At Angapradesh Home Flavour Pvt. Ltd., we are committed to delivering pure, organic, and handcrafted products that bring the authentic taste of home-cooked meals to your kitchen. Founded in April, 2021, our journey started with the vision of offering high-quality, natural products that are rooted in tradition while promoting a healthy, sustainable lifestyle."
@@ -205,34 +183,34 @@
                     <h4 data-lang-en="Shudh Kachi Ghani Mustard Oil - Pure & Cold-Pressed Goodness" 
         data-lang-hi="शुद्ध कच्ची घानी सरसों का तेल - शुद्ध और कोल्ड-प्रेस्ड">Shudh Kachi Ghani Mustard Oil - Pure & Cold-Pressed Goodness</h4>
 
-    <p data-lang-en="Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds. Using traditional cold-press techniques, this oil retains all the natural nutrients, pungency, and rich flavor that makes mustard oil a staple in Indian kitchens. Ideal for cooking, pickling, and even skincare, this mustard oil is 100% pure and unrefined, preserving its authentic taste and health benefits."
-       data-lang-hi="हमारा शुद्ध कच्ची घानी सरसों का तेल उच्च गुणवत्ता वाले सरसों के बीजों से निकाला गया एक प्रीमियम, कोल्ड-प्रेस्ड तेल है। पारंपरिक कोल्ड-प्रेस तकनीकों का उपयोग करते हुए, यह तेल सभी प्राकृतिक पोषक तत्वों, तीखेपन, और समृद्ध स्वाद को बरकरार रखता है जो भारतीय रसोई में सरसों के तेल का एक प्रधान बनाता है। यह तेल 100% शुद्ध और अनरिफाइंड है, जो अपने प्रामाणिक स्वाद और स्वास्थ्य लाभ को बनाए रखता है।">
-        Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds.
-    </p>
+				<p data-lang-en="Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds. Using traditional cold-press techniques, this oil retains all the natural nutrients, pungency, and rich flavor that makes mustard oil a staple in Indian kitchens. Ideal for cooking, pickling, and even skincare, this mustard oil is 100% pure and unrefined, preserving its authentic taste and health benefits."
+				   data-lang-hi="हमारा शुद्ध कच्ची घानी सरसों का तेल उच्च गुणवत्ता वाले सरसों के बीजों से निकाला गया एक प्रीमियम, कोल्ड-प्रेस्ड तेल है। पारंपरिक कोल्ड-प्रेस तकनीकों का उपयोग करते हुए, यह तेल सभी प्राकृतिक पोषक तत्वों, तीखेपन, और समृद्ध स्वाद को बरकरार रखता है जो भारतीय रसोई में सरसों के तेल का एक प्रधान बनाता है। यह तेल 100% शुद्ध और अनरिफाइंड है, जो अपने प्रामाणिक स्वाद और स्वास्थ्य लाभ को बनाए रखता है।">
+					Our Shudh Kachi Ghani Mustard Oil is a premium, cold-pressed oil extracted from high-quality mustard seeds.
+				</p>
 
-    <h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
-    <p>
-        <strong data-lang-en="100% Pure & Cold-Pressed:" data-lang-hi="100% शुद्ध और कोल्ड-प्रेस्ड:">100% Pure & Cold-Pressed:</strong> 
-        <span data-lang-en="Extracted using traditional cold-press methods to preserve the natural nutrients, taste, and aroma." 
-              data-lang-hi="प्राकृतिक पोषक तत्वों, स्वाद, और सुगंध को बनाए रखने के लिए पारंपरिक कोल्ड-प्रेस विधियों का उपयोग करके निकाला गया।">Extracted using traditional cold-press methods to preserve natural nutrients.</span><br>
-        
-        <strong data-lang-en="Rich in Essential Fatty Acids:" data-lang-hi="आवश्यक फैटी एसिड से भरपूर:">Rich in Essential Fatty Acids:</strong> 
-        <span data-lang-en="Contains omega-3 and omega-6 fatty acids, which are beneficial for heart health and overall wellness." 
-              data-lang-hi="ओमेगा-3 और ओमेगा-6 फैटी एसिड होते हैं, जो हृदय स्वास्थ्य और संपूर्ण स्वास्थ्य के लिए लाभकारी हैं।">Contains omega-3 and omega-6 fatty acids, beneficial for heart health.</span><br>
+				<h5 data-lang-en="Key Features:" data-lang-hi="मुख्य विशेषताएं:">Key Features:</h5>
+				<p>
+					<strong data-lang-en="100% Pure & Cold-Pressed:" data-lang-hi="100% शुद्ध और कोल्ड-प्रेस्ड:">100% Pure & Cold-Pressed:</strong> 
+					<span data-lang-en="Extracted using traditional cold-press methods to preserve the natural nutrients, taste, and aroma." 
+						  data-lang-hi="प्राकृतिक पोषक तत्वों, स्वाद, और सुगंध को बनाए रखने के लिए पारंपरिक कोल्ड-प्रेस विधियों का उपयोग करके निकाला गया।">Extracted using traditional cold-press methods to preserve natural nutrients.</span><br>
+					
+					<strong data-lang-en="Rich in Essential Fatty Acids:" data-lang-hi="आवश्यक फैटी एसिड से भरपूर:">Rich in Essential Fatty Acids:</strong> 
+					<span data-lang-en="Contains omega-3 and omega-6 fatty acids, which are beneficial for heart health and overall wellness." 
+						  data-lang-hi="ओमेगा-3 और ओमेगा-6 फैटी एसिड होते हैं, जो हृदय स्वास्थ्य और संपूर्ण स्वास्थ्य के लिए लाभकारी हैं।">Contains omega-3 and omega-6 fatty acids, beneficial for heart health.</span><br>
 
-        <strong data-lang-en="Bold Flavor and Aroma:" data-lang-hi="साहसी स्वाद और सुगंध:">Bold Flavor and Aroma:</strong> 
-        <span data-lang-en="Known for its characteristic pungency, our mustard oil adds depth and flavor to dishes, enhancing their authenticity." 
-              data-lang-hi="अपने विशिष्ट तीखेपन के लिए जाना जाता है, हमारा सरसों का तेल व्यंजनों में गहराई और स्वाद जोड़ता है।">Known for its characteristic pungency, adds depth and flavor.</span><br>
+					<strong data-lang-en="Bold Flavor and Aroma:" data-lang-hi="साहसी स्वाद और सुगंध:">Bold Flavor and Aroma:</strong> 
+					<span data-lang-en="Known for its characteristic pungency, our mustard oil adds depth and flavor to dishes, enhancing their authenticity." 
+						  data-lang-hi="अपने विशिष्ट तीखेपन के लिए जाना जाता है, हमारा सरसों का तेल व्यंजनों में गहराई और स्वाद जोड़ता है।">Known for its characteristic pungency, adds depth and flavor.</span><br>
 
-        <strong data-lang-en="Versatile Usage:" data-lang-hi="बहुआयामी उपयोग:">Versatile Usage:</strong> 
-        <span data-lang-en="Perfect for sautéing, frying, pickling, or as a massage oil for its skin and hair benefits." 
-              data-lang-hi="सॉट करने, तलने, अचार बनाने, या त्वचा और बालों के लाभों के लिए मालिश तेल के रूप में आदर्श।">Perfect for sautéing, frying, pickling, or as a massage oil.</span>
-    </p>
+					<strong data-lang-en="Versatile Usage:" data-lang-hi="बहुआयामी उपयोग:">Versatile Usage:</strong> 
+					<span data-lang-en="Perfect for sautéing, frying, pickling, or as a massage oil for its skin and hair benefits." 
+						  data-lang-hi="सॉट करने, तलने, अचार बनाने, या त्वचा और बालों के लाभों के लिए मालिश तेल के रूप में आदर्श।">Perfect for sautéing, frying, pickling, or as a massage oil.</span>
+				</p>
 
-    <p data-lang-en="Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil. From cooking flavorful curries to preserving pickles, this oil is a staple for any kitchen that values pure, nutrient-rich ingredients."
-       data-lang-hi="हमारे शुद्ध कच्ची घानी सरसों के तेल के साथ अपने रसोई में प्रामाणिक भारतीय स्वाद का सच्चा सार लाएं। स्वादिष्ट करी पकाने से लेकर अचार को संरक्षित करने तक, यह तेल उन सभी रसोई घरों के लिए एक मुख्य आधार है जो शुद्ध, पोषक तत्वों से भरपूर अवयवों की सराहना करते हैं।">
-        Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil.
-    </p>
+				<p data-lang-en="Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil. From cooking flavorful curries to preserving pickles, this oil is a staple for any kitchen that values pure, nutrient-rich ingredients."
+				   data-lang-hi="हमारे शुद्ध कच्ची घानी सरसों के तेल के साथ अपने रसोई में प्रामाणिक भारतीय स्वाद का सच्चा सार लाएं। स्वादिष्ट करी पकाने से लेकर अचार को संरक्षित करने तक, यह तेल उन सभी रसोई घरों के लिए एक मुख्य आधार है जो शुद्ध, पोषक तत्वों से भरपूर अवयवों की सराहना करते हैं।">
+					Bring the true essence of authentic Indian flavor to your kitchen with our Shudh Kachi Ghani Mustard Oil.
+				</p>
                     <!-- Carousel for Mustard Oil Images -->
                     <div id="mustardOilCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
 						<div class="carousel-inner">
@@ -564,13 +542,13 @@
 </section>
 
         <!-- Order Section -->
-        <section class="mt-5 mb-5 text-center" id="order" >
-           <h2 data-lang-en="Order Now!" data-lang-hi="अभी ऑर्डर करें!">Order Now!</h2>
+        <section class="mt-5 mb-5 text-center	 product-card rounded" id="order" >
+           <h2 data-lang-en="Order Now!" data-lang-hi="अभी ऑर्डर करें!" class="mt-5">Order Now!</h2>
     <p data-lang-en="To place an order, contact us via:" data-lang-hi="ऑर्डर करने के लिए, हमसे संपर्क करें:">To place an order, contact us via:</p>
     
-    <button class="btn btn-primary m-2" onclick="orderMyStore()" data-lang-en="Order on MyStore ONDC" data-lang-hi="मायस्टोर ONDC पर ऑर्डर करें"><i class="fas fa-shopping-cart"></i> Order on MyStore ONDC</button>
-    <button class="btn btn-success m-2" onclick="orderWhatsApp()" data-lang-en="Order on WhatsApp" data-lang-hi="व्हाट्सएप पर ऑर्डर करें"><i class="fab fa-whatsapp fa-1x"></i>  Order on WhatsApp</button>
-    <button class="btn btn-secondary m-2" onclick="orderPhone()" data-lang-en="Call Us" data-lang-hi="हमें कॉल करें"><i class="fas fa-phone fa-1x"></i>  Call Us</button>
+    <button class="btn btn-warning mb-5" onclick="orderMyStore()" data-lang-en="Order on MyStore ONDC" data-lang-hi="मायस्टोर ONDC पर ऑर्डर करें"><i class="fas fa-shopping-cart"></i> Order on MyStore ONDC</button>
+    <button class="btn btn-success mb-5" onclick="orderWhatsApp()" data-lang-en="Order on WhatsApp" data-lang-hi="व्हाट्सएप पर ऑर्डर करें"><i class="fab fa-whatsapp fa-1x"></i>  Order on WhatsApp</button>
+    <button class="btn btn-secondary mb-5" onclick="orderPhone()" data-lang-en="Call Us" data-lang-hi="हमें कॉल करें"><i class="fas fa-phone fa-1x"></i>  Call Us</button>
 
         </section>
 		
