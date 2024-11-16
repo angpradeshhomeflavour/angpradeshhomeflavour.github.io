@@ -83,3 +83,73 @@ footer {
     color: #fff;
     font-size: 0.9em;
 }
+.social-icons i {
+    color: white; /* Set icon color to white */
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #ffc107; /* Set hover color for icons */
+	
+	
+	
+}
+
+/* Navbar Styling */
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        /* Product Cards */
+        .product-card img {
+            object-fit: cover;
+            height: 200px;
+        }
+        .product-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffc107;
+        }
